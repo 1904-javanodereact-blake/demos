@@ -8,3 +8,5 @@
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
+|Shreyas        |Kathavate      |Shreyas-Kathavate | shreyaskathavate010@gmail.com |
+
