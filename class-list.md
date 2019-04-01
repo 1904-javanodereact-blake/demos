@@ -6,6 +6,7 @@
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Aaron         | Williams|     | NiceNasty69   |
@@ -13,9 +14,10 @@ whildkhild@yahoo.com      |
 =======
 <<<<<<< HEAD
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
-| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 =======
-| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
+| Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
+| Jeffrey       | KIng          | jeffkingsd   | jkingsoftware@protonmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
-
->>>>>>> 1c9418c914fb8cddb17b9fe84c654b0d971259c2
+| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
