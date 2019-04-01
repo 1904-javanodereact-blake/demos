@@ -6,4 +6,5 @@
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
 | Charles A     | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
+| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
