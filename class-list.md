@@ -20,5 +20,6 @@
 
 =======
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+| Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
 | Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
 >>>>>>> 3ef9b4aa1cedf73f104f50f90ae16c2d5fc63048
