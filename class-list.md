@@ -14,7 +14,6 @@
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
-| Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
