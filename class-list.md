@@ -14,13 +14,10 @@
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jeffrey       | King          | jeffkingsd   | jkingsoftware@protonmail.com |
-<<<<<<< HEAD
 | Aaron         | Williams|     | NiceNasty69  | whildkhild@yahoo.com      |
 |Shreyas        |Kathavate      |Shreyas-Kathavate | shreyaskathavate010@gmail.com |
-=======
 | Aaron         | Williams|     | NiceNasty69   | whildkhild@yahoo.com      |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
->>>>>>> f4a5f57f6601b609959df4ed48bf85d2cc9f3a60
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
 | Karmanya      | Suryavanshi   | karmanya77   | suryavanshikarmanya@gmail.com   | 
