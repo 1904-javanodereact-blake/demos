@@ -13,11 +13,5 @@
 | Aaron         | Williams      | NiceNasty69  | whildkhild@yahoo.com      |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
-<<<<<<< HEAD
-| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
-| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
-| shahram       | Saghri         | shahramSaghri |    | shahram.saghri@gmail.com|
-=======
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
 | Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   | 
->>>>>>> f4a5f57f6601b609959df4ed48bf85d2cc9f3a60
