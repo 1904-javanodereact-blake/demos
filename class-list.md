@@ -10,7 +10,7 @@
 | Bradley       | Pelton        | Gausstotle   | bradleypelton@gmail.com   |
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
 | Jeffrey       | King          | jeffkingsd   | jkingsoftware@protonmail.com |
-| Aaron         | Williams|     | NiceNasty69   | whildkhild@yahoo.com      |
+| Aaron         | Williams      | NiceNasty69  | whildkhild@yahoo.com      |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
