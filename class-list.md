@@ -4,6 +4,6 @@
 | Blake         | Kruppa        | btkruppa     | blake.kruppa@revature.com |
 | Joseph        | Sperduto      | sperj001     | josephsperduto@gmail.com  |
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
-| Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
+| Charles A     | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
