@@ -6,7 +6,15 @@
 | Charles A     | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
+<<<<<<< HEAD
 | Jehudi	| Meza		| o-exit-8     | o.exit.8@gmail.com        |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
+=======
+| Jeffrey       | KIng          | jeffkingsd   | jkingsoftware@protonmail.com |
+| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
+| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+| Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
+| Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
+>>>>>>> 8886ecb778b66469aa8ca5b43257739aa37eb38a
