@@ -1,7 +1,6 @@
 | First Name    | Last Name     | GitHub Name  | email                     |
 | ------------- | ------------- | -----        | ----                      |
 | Blake         | Kruppa        | btkruppa     | blake.kruppa@revature.com |
-| Blake         | Kruppa        | btkruppa     | blake.kruppa@revature.com |
 | Joseph        | Sperduto      | sperj001     | josephsperduto@gmail.com  |
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
@@ -12,7 +11,11 @@
 | Aaron         | Williams|     | NiceNasty69   |
 whildkhild@yahoo.com      |
 =======
-| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
-| Bradley       | Pelton        | Gausstotle   | bradleypelton@gmail.com   |
+<<<<<<< HEAD
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
+=======
+| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+| Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
+
+>>>>>>> 1c9418c914fb8cddb17b9fe84c654b0d971259c2
