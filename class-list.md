@@ -2,4 +2,4 @@
 | ------------- | ------------- | -----        | ----  |
 | Blake         | Kruppa        | btkruppa     | blake.kruppa@revature.com |
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com || Joseph        | Sperduto        | sperj001     | josephsperduto@gmail.com |
-| Danae         | Morgan        | nae-chan     | danae.morgan@gmail.com    |
+| Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
