@@ -14,12 +14,7 @@
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Karmanya      | Suryavanshi   | karmanya77   | suryavanshikarmanya@gmail.com   |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
-| Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
-| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
-| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
-| shahram       | Saghri         | shahramSaghri |    | shahram.saghri@gmail.com|
-| Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
-
-| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   | 
-|Nicholas         | Cordon      | Ncinc        | nicholascordon1@gmail.com
-| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   | 
+| Bradley       | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+| shahram       | Saghri        | shahramSaghri |    | shahram.saghri@gmail.com|
+| Fred          | Kanne         | FredHKanne   | fredkanne@att.net         | 
+|Nicholas       | Cordon        | Ncinc        | nicholascordon1@gmail.com
