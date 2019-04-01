@@ -5,3 +5,4 @@
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
+| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
