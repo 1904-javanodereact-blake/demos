@@ -8,10 +8,13 @@
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Bradley       | Pelton        | Gausstotle   | bradleypelton@gmail.com   |
+| PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
+| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
+| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
-| Jeffrey       | KIng          | jeffkingsd   | jkingsoftware@protonmail.com |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
+
