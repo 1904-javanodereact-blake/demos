@@ -10,13 +10,9 @@
 | Aaron         | Williams|     | NiceNasty69  | whildkhild@yahoo.com      |
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
-| Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jeffrey       | KIng          | jeffkingsd   | jkingsoftware@protonmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
-| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
 | Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
-| Jeffrey       | King          | jeffkingsd   | jkingsoftware@protonmail.com |
-| Aaron         | Williams|     | NiceNasty69   | whildkhild@yahoo.com      |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
@@ -26,7 +22,4 @@
 
 | Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   | 
 |Nicholas         | Cordon      | Ncinc        | nicholascordon1@gmail.com
->>>>>>> c6f41e1526c91b75b7557858b1307d52b1d0b66d
-=======
 | Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   | 
->>>>>>> 2fb2aabc85f01a33050a4387f90d75c6ec9a0b13
