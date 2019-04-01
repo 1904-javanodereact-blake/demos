@@ -4,10 +4,9 @@
 | Joseph        | Sperduto      | sperj001     | josephsperduto@gmail.com  |
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
-| Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
+| Danae         | Morgan        | Nae-chan     | danaemorg@gmail.com    |
 | Bradley       | Pelton        | Gausstotle   | bradleypelton@gmail.com   |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
-| Aaron         | Williams|     | NiceNasty69  | whildkhild@yahoo.com      |
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Jeffrey       | KIng          | jeffkingsd   | jkingsoftware@protonmail.com |
@@ -15,6 +14,7 @@
 | Karmanya      | Suryavanshi   | karmanya77   | suryavanshikarmanya@gmail.com   |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
 | Bradley       | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
-| shahram       | Saghri        | shahramSaghri |    | shahram.saghri@gmail.com|
+| shahram       | Saghri        | shahramSaghri  | shahram.saghri@gmail.com|
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         | 
-|Nicholas       | Cordon        | Ncinc        | nicholascordon1@gmail.com
+|Nicholas       | Cordon        | Ncinc        | nicholascordon1@gmail.com |
+| Aaron         | Williams      | NiceNasty69  | whildkhild@yahoo.com      |
