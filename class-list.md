@@ -1,9 +1,11 @@
 | First Name    | Last Name     | GitHub Name  | email                     |
 | ------------- | ------------- | -----        | ----                      |
 | Blake         | Kruppa        | btkruppa     | blake.kruppa@revature.com |
+| Blake         | Kruppa        | btkruppa     | blake.kruppa@revature.com |
 | Joseph        | Sperduto      | sperj001     | josephsperduto@gmail.com  |
+| Charles A     | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
-| Danae         | Morgan        | Nae-chan     | danaemorg@gmail.com    |
+| Danae         | Morgan        | Nae-chan     | danaemorg@gmail.com       |
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
@@ -12,8 +14,14 @@
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jeffrey       | King          | jeffkingsd   | jkingsoftware@protonmail.com |
+<<<<<<< HEAD
 | Aaron         | Williams|     | NiceNasty69  | whildkhild@yahoo.com      |
 |Shreyas        |Kathavate      |Shreyas-Kathavate | shreyaskathavate010@gmail.com |
+=======
+| Aaron         | Williams|     | NiceNasty69   | whildkhild@yahoo.com      |
+| Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
+>>>>>>> f4a5f57f6601b609959df4ed48bf85d2cc9f3a60
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
 | Karmanya      | Suryavanshi   | karmanya77   | suryavanshikarmanya@gmail.com   | 
+| Jehudi	| Meza		| o-exit-8     | o.exit.8@gmail.com	   |
