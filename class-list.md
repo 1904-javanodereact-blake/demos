@@ -7,3 +7,4 @@
 | Charles       | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
+| PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
