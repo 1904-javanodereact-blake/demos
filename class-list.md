@@ -5,7 +5,7 @@
 | Joseph        | Sperduto      | sperj001     | josephsperduto@gmail.com  |
 | Charles A     | Lyons         | KingArctic   | austinlyns@gmail.com      |
 | Daniel        | Ortyn         | DanielOrtyn  | danielortyn@comcast.net   |
-| Danae         | Morgan        | Nae-chan     | danae.morgan@gmail.com    |
+| Danae         | Morgan        | Nae-chan     | danaemorg@gmail.com    |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Bradley       | Pelton        | Gausstotle   | bradleypelton@gmail.com   |
