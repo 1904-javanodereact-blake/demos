@@ -17,4 +17,4 @@ whildkhild@yahoo.com      |
 |Shreyas        |Kathavate      |Shreyas-Kathavate | shreyaskathavate010@gmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
-| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
+| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   | 
