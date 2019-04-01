@@ -16,10 +16,3 @@
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
-<<<<<<< HEAD
-
-=======
-| Bradley         | Pelton        | Gausstotle     | bradleypelton@gmail.com   |
-| Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
-| Karmanya        | Suryavanshi       | karmanya77    | suryavanshikarmanya@gmail.com   |
->>>>>>> 3ef9b4aa1cedf73f104f50f90ae16c2d5fc63048
