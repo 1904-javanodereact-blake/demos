@@ -10,13 +10,12 @@
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Jeffrey       | King          | jeffkingsd   | jkingsoftware@protonmail.com |
-| Aaron         | Williams|     | NiceNasty69  | whildkhild@yahoo.com      |
-| Shreyas        |Kathavate      |Shreyas-Kathavate | shreyaskathavate010@gmail.com |
-| Aaron         | Williams|     | NiceNasty69   | whildkhild@yahoo.com      |
-| Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
+| Aaron         | Williams      | NiceNasty69  | whildkhild@yahoo.com      |
+| Shreyas       | Kathavate      |Shreyas-Kathavate | shreyaskathavate010@gmail.com |
 | Jerry         | Funderburk    | FunderJM     | jer.fun1@gmail.com        |
 | Fred          | Kanne         | FredHKanne   | fredkanne@att.net         |
 | Karmanya      | Suryavanshi   | karmanya77   | suryavanshikarmanya@gmail.com   | 
-| Jehudi	| Meza		| o-exit-8     | o.exit.8@gmail.com	   |
-| Nicholas      | Cordon  |     |Ncinc         | nicholascordon1@gmail.com
+| Jehudi	    | Meza		| o-exit-8     | o.exit.8@gmail.com	   |
+| Nicholas      | Cordon  |Ncinc         | nicholascordon1@gmail.com
 | shahram       | Saghri        | shahramSaghri  | shahram.saghri@gmail.com|
+| James        | McLean       | HamishMcLean    | james.smith.mclean@gmail.com   | 
