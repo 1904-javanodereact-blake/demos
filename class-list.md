@@ -9,8 +9,6 @@
 | Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
 | Bradley       | Pelton        | Gausstotle   | bradleypelton@gmail.com   |
 | PJ            | Valenzuela    | pvalenz1     | pj.astropreneur@gmail.com |
-| Prasan        | Pitiranggon   | prasanpiti   | prasan.piti@gmail.com     |
-| Ric           | Davis         | rickeyd1     | rickjay0@gmail.com        |
 | Jeffrey       | King          | jeffkingsd   | jkingsoftware@protonmail.com |
 | Aaron         | Williams|     | NiceNasty69   | whildkhild@yahoo.com      |
 | Shreyas       | Kathavate     | Shreyas-Kathavate | shreyaskathavate010@gmail.com |
