@@ -2,10 +2,10 @@
 
 
 function doMath(a, b, c) {
-  return a + b + c;
+  return a + b * c;
 }
 
-console.log(doMath(5,5,5));
+console.log(doMath(5,5, 2));
 console.log(doMath(2,8,15));
 
 let result = doMath(55,83,1234);

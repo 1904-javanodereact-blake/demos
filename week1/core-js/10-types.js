@@ -17,3 +17,6 @@ typeCheck(false);
 typeCheck(typeCheck);
 typeCheck({});
 typeCheck([1,2,3,4]);
+typeCheck(null);
+typeCheck(undefined);
+typeCheck(NaN);
