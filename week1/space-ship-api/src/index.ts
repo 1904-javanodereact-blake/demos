@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import { userRouter } from './routers/user-router';
 
 const app = express();
 
@@ -26,6 +27,11 @@ app.get('/hello', (req, res) => {
   res.send('hello world');
 });
 
+
+/**
+ * Register Routers
+ */
+app.use('/users', userRouter);
 
 app.listen(8080);
 console.log('end of index');
