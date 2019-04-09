@@ -13,11 +13,11 @@ export class Spaceship {
     speed = 0,
     description = '') {
 
-    this.shipId = this.shipId;
-    this.owner = this.owner;
-    this.name = this.name;
-    this.weight = this.weight;
-    this.speed = this.speed;
-    this.description = this.description;
+    this.shipId = shipId;
+    this.owner = owner;
+    this.name = name;
+    this.weight = weight;
+    this.speed = speed;
+    this.description = description;
   }
 }

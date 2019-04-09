@@ -1,4 +1,5 @@
 import express from 'express';
+import { spaceships } from '../state';
 
 /**
  * User router will handle all requests starting with
@@ -12,8 +13,7 @@ export const spaceshipRouter = express.Router();
  * endpoint: /spaceships
  */
 spaceshipRouter.get('', (req, res) => {
-  console.log('retreiving all spaceships')
-  res.send('all spaceships')
+  res.json(spaceships);
 })
 
 /**
@@ -30,8 +30,8 @@ spaceshipRouter.get('/:id', (req, res) => {
  * endpoint: /spaceships/owner/:id
  */
 spaceshipRouter.get('/owner/:ownerId', (req, res) => {
-  console.log(`retreiving spaceship with id: ${req.params.ownerId}`);
-  res.send(`here is the spaceship with id: ${req.params.ownerId}`);
+  const ships = spaceships.filter(ship => ship.owner === +req.params.ownerId);
+  res.json(ships);
 })
 
 spaceshipRouter.post('', (req, res) => {

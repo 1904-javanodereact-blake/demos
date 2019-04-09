@@ -8,14 +8,16 @@ const app = express();
 
 app.use((req, res, next) => {
   console.log(`request made with url: ${req.url} and method: ${req.method}`);
-  const headers = req.rawHeaders;
-  console.log(headers);
+  // const headers = req.rawHeaders;
+  // console.log(headers);
   next();
 });
 
-app.use(bodyParser.json());
+// attach an actual object to req.body
+app.use(bodyParser.json()); 
 
-app.use(sessionMiddleware);
+// attach the specific users session data to req.session
+app.use(sessionMiddleware); 
 
 /**
  * Register Routers
@@ -23,5 +25,7 @@ app.use(sessionMiddleware);
 app.use('/users', userRouter);
 app.use('/spaceships', spaceshipRouter);
 
-app.listen(8080);
-console.log('end of index');
+// start up the application
+app.listen(8080, () => {
+  console.log(`application started`);
+});
