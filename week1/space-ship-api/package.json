@@ -5,7 +5,9 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "nodemon --exec ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "Blake Kruppa",
   "license": "ISC",
@@ -19,6 +21,7 @@
     "@types/express-session": "^1.15.12",
     "nodemon": "^1.18.10",
     "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
     "typescript": "^3.4.2"
   }
 }

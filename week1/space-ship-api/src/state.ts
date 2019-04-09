@@ -1,5 +1,5 @@
-import { User } from "./model/user";
-import { Spaceship } from "./model/spaceship";
+import { User } from './model/user';
+import { Spaceship } from './model/spaceship';
 
 export let users: User[] = [
   new User(1, 'blake', 'pass', 'blake', 'admin'),

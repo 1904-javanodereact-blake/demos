@@ -17,9 +17,9 @@ export const userRouter = express.Router();
 userRouter.get('', [
   authMiddleware(['admin']),
   (req, res) => {
-    console.log('retreiving all users')
+    console.log('retreiving all users');
     res.json(users);
-  }])
+  }]);
 
 /**
  * find user by id
@@ -34,7 +34,7 @@ userRouter.get('/:id', (req, res) => {
   } else {
     res.sendStatus(404);
   }
-})
+});
 
 
 userRouter.post('', (req, res) => {
@@ -44,19 +44,19 @@ userRouter.post('', (req, res) => {
   users.push(user);
   res.status(201);
   res.send(user);
-})
+});
 
 userRouter.patch('', (req, res) => {
   const { body } = req; // destructuring
   console.log(`updating user`, body);
   const user = users.find((u) => {
     // console.log(`u = `, u);
-    return u.userId === body.userId
+    return u.userId === body.userId;
   });
   if (!user) {
     res.sendStatus(404);
   } else {
-    for (let field in user) {
+    for (const field in user) {
       if (body[field] !== undefined) {
         user[field] = body[field];
       }
@@ -64,7 +64,7 @@ userRouter.patch('', (req, res) => {
     res.json(user);
   }
 
-})
+});
 
 
 userRouter.post('/login', (req, res) => {
@@ -78,4 +78,4 @@ userRouter.post('/login', (req, res) => {
   } else {
     res.sendStatus(401);
   }
-})
+});

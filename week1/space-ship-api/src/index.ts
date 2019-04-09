@@ -14,10 +14,10 @@ app.use((req, res, next) => {
 });
 
 // attach an actual object to req.body
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 
 // attach the specific users session data to req.session
-app.use(sessionMiddleware); 
+app.use(sessionMiddleware);
 
 /**
  * Register Routers
