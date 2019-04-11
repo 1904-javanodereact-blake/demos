@@ -9,6 +9,4 @@ const connectionInfo = {
   max: 5, // max number of connections this application will create
 };
 
-console.log(connectionInfo);
-
 export const connectionPool = new Pool(connectionInfo);

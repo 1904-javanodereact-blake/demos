@@ -1,3 +1,6 @@
-import { findAllSpaceship } from './dao';
+import { findAllSpaceshipBetter } from './dao';
 
-findAllSpaceship();
+// findAllSpaceship();
+findAllSpaceshipBetter();
+
+console.log('hello');
