@@ -1,0 +1,17 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pg": "^7.4.14",
+    "pg": "^7.9.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.3"
+  }
+}

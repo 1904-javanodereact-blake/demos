@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2018"],
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "styleguide.config.js",
+    "docs",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/**/*.test.ts"
+  ]
+}
