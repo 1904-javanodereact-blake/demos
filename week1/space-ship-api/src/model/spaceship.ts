@@ -12,7 +12,6 @@ export class Spaceship {
     weight = 0,
     speed = 0,
     description = '') {
-
     this.shipId = shipId;
     this.owner = owner;
     this.name = name;

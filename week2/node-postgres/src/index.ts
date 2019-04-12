@@ -1,6 +1,7 @@
-import { findAllSpaceshipBetter } from './dao';
+import { findByUsernameAndPassword } from './dao';
 
 // findAllSpaceship();
-findAllSpaceshipBetter();
+// findAllSpaceshipBetter();
+findByUsernameAndPassword(`btkruppa`, 'pass');
 
 console.log('hello');

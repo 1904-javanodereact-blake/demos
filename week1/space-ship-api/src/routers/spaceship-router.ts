@@ -1,5 +1,5 @@
 import express from 'express';
-import { spaceships } from '../state';
+import * as spaceshipDao  from '../daos/spaceship.dao';
 
 /**
  * User router will handle all requests starting with
@@ -12,26 +12,27 @@ export const spaceshipRouter = express.Router();
  * find all spaceships
  * endpoint: /spaceships
  */
-spaceshipRouter.get('', (req, res) => {
-  res.json(spaceships);
+spaceshipRouter.get('', async (req, res) => {
+  const ships = await spaceshipDao.findAllSpaceship();
+  res.json(ships);
 });
 
 /**
  * find spaceship by id
  * endpoint: /spaceships/:id
  */
-spaceshipRouter.get('/:id', (req, res) => {
-  console.log(`retreiving spaceship with id: ${req.params.id}`);
-  res.send(`here is the spaceship with id: ${req.params.id}`);
+spaceshipRouter.get('/:id', async (req, res) => {
+  const id = +req.params.id;
+  console.log(`retreiving spaceship with id: ${id}`);
+  res.json(await spaceshipDao.findById(id));
 });
 
 /**
  * find spaceships by owner id
  * endpoint: /spaceships/owner/:id
  */
-spaceshipRouter.get('/owner/:ownerId', (req, res) => {
-  const ships = spaceships.filter(ship => ship.owner === +req.params.ownerId);
-  res.json(ships);
+spaceshipRouter.get('/owner/:ownerId', async (req, res) => {
+  res.json(await spaceshipDao.findByOwner(+req.params.ownerId));
 });
 
 spaceshipRouter.post('', (req, res) => {
