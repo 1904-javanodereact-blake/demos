@@ -1,5 +1,5 @@
 import express from 'express';
-import * as spaceshipDao  from '../daos/spaceship.dao';
+import * as spaceshipDao from '../daos/spaceship.dao';
 import { authMiddleware } from '../middleware/auth.middleware';
 
 /**
@@ -38,10 +38,11 @@ spaceshipRouter.get('/owner/:ownerId', async (req, res) => {
   res.json(await spaceshipDao.findByOwner(+req.params.ownerId));
 });
 
-spaceshipRouter.post('', (req, res) => {
+spaceshipRouter.post('', async (req, res) => {
   console.log(`creating spaceship`, req.body);
+  const ship = await spaceshipDao.save(req.body);
   res.status(201);
-  res.send('created spaceship');
+  res.json(ship);
 });
 
 spaceshipRouter.patch('', (req, res) => {
