@@ -1,0 +1,12 @@
+#ship-table {
+  width: 75%;
+  margin:auto;
+  margin-top: 12px;
+}
+
+#ship-table tr:hover {
+  -webkit-box-shadow: inset 0px 0px 10px 3px rgba(34,255,0,1);
+  -moz-box-shadow: inset 0px 0px 10px 3px rgba(34,255,0,1);
+  box-shadow: inset 0px 0px 10px 3px rgba(34,255,0,1);
+  cursor: progress;
+}

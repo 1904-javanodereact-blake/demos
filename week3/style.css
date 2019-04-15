@@ -1,0 +1,46 @@
+
+#paragraph-3 {
+  color:green;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow'
+}
+
+#paragraph-3 {
+  color: red;
+}
+
+p {
+  color: blue;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+#ship-table {
+  border: 10px salmon groove;
+  border-radius: 3em;
+}
+
+.row {
+  background-color: bisque;
+}
+
+#idk {
+  border-top: 6px dashed purple;
+  border-bottom: 60px dotted hotpink;
+  width: 30%;
+  padding: 15px;
+  margin: auto;
+
+}
+
+#login-form {
+  margin: auto;
+  box-shadow: 9px 10px 5px 1px rgba(27,184,171,1); 
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: peru;
+}
