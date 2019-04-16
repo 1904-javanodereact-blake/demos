@@ -5,6 +5,7 @@ import { spaceshipRouter } from './routers/spaceship-router';
 import { sessionMiddleware } from './middleware/session.middleware';
 
 const app = express();
+const port = process.env.SHIP_PORT || 8080;
 
 app.use((req, res, next) => {
   console.log(`request made with url: ${req.url} and method: ${req.method}`);
@@ -19,6 +20,17 @@ app.use(bodyParser.json());
 // attach the specific users session data to req.session
 app.use(sessionMiddleware);
 
+// allow cross origins
+app.use((req, resp, next) => {
+  console.log(req.get('host'));
+  (process.env.SHIP_API_STAGE === 'prod')
+    ? resp.header('Access-Control-Allow-Origin', process.env.SHIP_APP_URL)
+    : resp.header('Access-Control-Allow-Origin', `${req.headers.origin}`);
+  resp.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  resp.header('Access-Control-Allow-Credentials', 'true');
+  next();
+});
+
 /**
  * Register Routers
  */
@@ -26,6 +38,6 @@ app.use('/users', userRouter);
 app.use('/spaceships', spaceshipRouter);
 
 // start up the application
-app.listen(8080, () => {
-  console.log(`application started`);
+app.listen(port, () => {
+  console.log(`application started on port:` + port);
 });

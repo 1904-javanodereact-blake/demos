@@ -1,0 +1,25 @@
+#pokemon-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-sprite {
+  min-height: 10em;
+}
+
+#pokemon-name {
+  text-align: center;
+}
+
+#pokemon-card {
+  width: 80%;
+}
