@@ -16,9 +16,19 @@ export const spaceshipRouter = express.Router();
 spaceshipRouter.get('', [
   authMiddleware(['admin']),
   async (req, res) => {
-  const ships = await spaceshipDao.findAllSpaceship();
-  res.json(ships);
-}]);
+    const ships = await spaceshipDao.findAllSpaceship();
+    res.json(ships);
+  }]);
+
+/**
+ * delete spaceship by id
+ * endpoint: /spaceships/:id
+ */
+spaceshipRouter.delete('/:id', async (req, res) => {
+  const id = +req.params.id;
+  console.log(`deleting spaceship with id: ${id}`);
+  res.json(await spaceshipDao.deleteById(id));
+});
 
 /**
  * find spaceship by id
@@ -40,9 +50,15 @@ spaceshipRouter.get('/owner/:ownerId', async (req, res) => {
 
 spaceshipRouter.post('', async (req, res) => {
   console.log(`creating spaceship`, req.body);
-  const ship = await spaceshipDao.save(req.body);
-  res.status(201);
-  res.json(ship);
+  const reqShip = req.body;
+  reqShip.owner = req.session.user.userId;
+  const ship = await spaceshipDao.save(reqShip);
+  if (ship) {
+    res.status(201);
+    res.json(ship);
+  } else {
+    res.sendStatus(400);
+  }
 });
 
 spaceshipRouter.patch('', (req, res) => {

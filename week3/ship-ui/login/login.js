@@ -25,7 +25,9 @@ async function login(event) {
       document.getElementById('login-error').innerText = 'Invalid Credentials'
     } else if (resp.status === 200) {
       // redirect to home page
-      alert('Successfully logged in');
+      const user = await resp.json();
+      localStorage.setItem('currentUser', JSON.stringify(user));
+      window.location = '../home/home.html';
     } else {
       document.getElementById('login-error').innerText = 'Cannot Login At This Time'
     }

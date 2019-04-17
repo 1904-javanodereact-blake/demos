@@ -71,3 +71,20 @@ export async function save(ship: Spaceship) {
     client && client.release();
   }
 }
+
+
+export async function deleteById(id: number) {
+  let client: PoolClient;
+  try {
+    client = await connectionPool.connect();
+    const queryString = 'DELETE FROM spaceship.spaceship WHERE ship_id = $1';
+    const result = await client.query(queryString, [id]);
+    console.log(result.rows);
+    return result.rows[0] && convertSqlShip(result.rows[0]);
+  } catch (err) {
+    console.log(err);
+    return undefined;
+  } finally {
+    client && client.release();
+  }
+}
