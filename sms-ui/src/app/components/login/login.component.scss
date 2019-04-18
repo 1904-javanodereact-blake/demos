@@ -1,0 +1,59 @@
+@import "../../../styles.scss";
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin:auto;
+  margin-top: 50px;
+  @include md {
+    max-width: 80%
+  }
+}
+
+#forgot-pass-btn{
+  color: blue;
+  margin-top: 0.5em;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  -webkit-transition: 1s;
+          transition: 1s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+#invalidCredHead {
+  color: red;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+
+#titleHead{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  * {
+    margin: 0.3em;
+  }
+}
+
+.txt-bx{
+  width: 250px;
+}
+
+#forgot-pass-btn {
+  margin: auto;
+}

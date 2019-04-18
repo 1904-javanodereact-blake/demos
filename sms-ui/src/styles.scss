@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+
+.form-control {
+  &:focus {
+    border-color: $revature-orange-light;
+    box-shadow: 0 0 0.2rem 0.1rem $revature-orange-light;
+  }
+}
+
+
+.rev-btn:not(.dropdown), .rev-btn > button.dropdown-toggle {
+  background-color: $revature-orange-light ;
+  border-color: $revature-orange-light;
+  color: black !important;
+  &:hover {
+    border-bottom-color: #565D61;
+    color: $revature-orange-light;
+  }
+  &:active {
+    background-color: $revature-orange-light;
+    color: #565D61;
+    box-shadow: 0 0 0 0.2rem rgba($revature-orange-light, 0.5) !important;
+  }
+  &:active, &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($revature-orange-light, 0.5) !important;
+  } 
+
+}

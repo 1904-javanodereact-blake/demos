@@ -1,0 +1,28 @@
+<div id="login-container">
+  <div class="shadow-lg p-3 mb-5 bg-white rounded top-lev-div">
+
+    <h4 id="titleHead">Sign in to SMS</h4>
+    <form id="login-form" (ngSubmit)="submit()" *ngIf="!newPasswordRequired">
+      <input name="username" type="text" class="form-control txt-bx" placeholder="Username" [(ngModel)]="username"
+        required />
+
+      <input name="password" type="password" class="form-control txt-bx" id="login-pass" placeholder="Password"
+        [(ngModel)]="password" required />
+      <button class="btn rev-btn" type="submit">Login</button>
+    </form>
+    <form id="login-form" (ngSubmit)="submitNewPassword()" *ngIf="newPasswordRequired">
+      <input name="new-password" type="password" class="form-control txt-bx" placeholder="New Password" [(ngModel)]="newPassword"
+        required />
+
+      <input name="confirmation-password" type="password" class="form-control txt-bx" id="login-pass" placeholder="Confirmation Password"
+        [(ngModel)]="confirmationPassword" required />
+      <button class="btn rev-btn" type="submit">Login</button>
+    </form>
+    <div class="row reset-div">
+
+      <button id="forgot-pass-btn">Forgot Password</button>
+    </div>
+    <!-- <h6 id="invalidCredHead">Invalid Credentials</h6> -->
+
+  </div>
+</div>
