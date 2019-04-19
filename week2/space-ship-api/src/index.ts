@@ -7,6 +7,11 @@ import { sessionMiddleware } from './middleware/session.middleware';
 const app = express();
 const port = process.env.SHIP_PORT || 8080;
 
+
+app.get('/dummy', (req, res) => {
+   res.send('duummy data');
+})
+
 app.use((req, res, next) => {
   console.log(`request made with url: ${req.url} and method: ${req.method}`);
   // const headers = req.rawHeaders;
