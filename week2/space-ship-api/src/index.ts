@@ -9,8 +9,8 @@ const port = process.env.SHIP_PORT || 8080;
 
 
 app.get('/dummy', (req, res) => {
-   res.send('duummy data');
-})
+   res.send('duummy data updated');
+});
 
 app.use((req, res, next) => {
   console.log(`request made with url: ${req.url} and method: ${req.method}`);
