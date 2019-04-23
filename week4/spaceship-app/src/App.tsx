@@ -13,6 +13,7 @@ import { ChuckNorrisComponent } from './components/chuck-norris/chuck-norris.com
 import { NestedComponent } from './components/nested/nested.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { ClickerComponent } from './components/clicker/clicker.component';
+import { SpaceshipsComponent } from './components/spaceships/spaceships.component';
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         <Route path="/pokemon" component={PokemonComponent} />
         <Route path="/second" component={SecondComponent} />
         <Route path="/sign-in" component={SignInComponent} />
+        <Route path="/spaceships" component={SpaceshipsComponent} />
         <Route path="/tic-tac-toe" component={TicTacComponent} />
       </div>
     </BrowserRouter>

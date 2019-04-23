@@ -1,6 +1,6 @@
 import express from 'express';
 import * as spaceshipDao from '../daos/spaceship.dao';
-import { authMiddleware } from '../middleware/auth.middleware';
+// import { authMiddleware } from '../middleware/auth.middleware';
 
 /**
  * User router will handle all requests starting with
@@ -14,7 +14,7 @@ export const spaceshipRouter = express.Router();
  * endpoint: /spaceships
  */
 spaceshipRouter.get('', [
-  authMiddleware(['admin']),
+  // authMiddleware(['admin']),
   async (req, res) => {
     const ships = await spaceshipDao.findAllSpaceship();
     res.json(ships);
