@@ -18,16 +18,18 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <NavComponent />
-      <Route path="/chuck-norris" component={ChuckNorrisComponent} />
-      <Route path="/clicker" component={ClickerComponent} />
-      <Route path="/first" component={FirstComponent} />
-      <Route path="/home" component={HomeComponent} />
-      <Route path="/movies" component={MoviesComponent} />
-      <Route path="/nested" component={NestedComponent} />
-      <Route path="/pokemon" component={PokemonComponent} />
-      <Route path="/second" component={SecondComponent} />
-      <Route path="/sign-in" component={SignInComponent} />
-      <Route path="/tic-tac-toe" component={TicTacComponent} />
+      <div id="main-content-container">
+        <Route path="/chuck-norris" component={ChuckNorrisComponent} />
+        <Route path="/clicker" component={ClickerComponent} />
+        <Route path="/first" component={FirstComponent} />
+        <Route path="/home" component={HomeComponent} />
+        <Route path="/movies" component={MoviesComponent} />
+        <Route path="/nested" component={NestedComponent} />
+        <Route path="/pokemon" component={PokemonComponent} />
+        <Route path="/second" component={SecondComponent} />
+        <Route path="/sign-in" component={SignInComponent} />
+        <Route path="/tic-tac-toe" component={TicTacComponent} />
+      </div>
     </BrowserRouter>
   );
 }
