@@ -1,4 +1,5 @@
 import React from 'react';
+import { IncrementerComponent } from './clicker-incrementer/clicker-incrementer.component';
 
 interface IState {
   clicks: number;
@@ -23,12 +24,12 @@ export class ClickerComponent extends React.Component<any, IState> {
     return (
       <div>
         <h2>Clicks: {this.state.clicks}</h2>
-        <button onClick={() => this.click(1)} className="btn btn-success">+1</button>
-        
-        <br/>
-
-        <button onClick={() => this.click(2)} className="btn btn-danger">+2</button>
-      
+        <IncrementerComponent label="+1" increment={() => this.click(1)} />
+        <br />
+        {
+          this.state.clicks >= 47 &&
+          <IncrementerComponent label="+2" increment={() => this.click(2)} />
+        }
       </div>
     );
   }

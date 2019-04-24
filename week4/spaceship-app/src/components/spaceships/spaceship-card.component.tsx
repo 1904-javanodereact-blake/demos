@@ -9,7 +9,7 @@ export class SpaceshipCardComponent extends React.PureComponent<IShipCardProps> 
   render() {
     const ship = this.props.ship;
     return (
-      <div key={'ship-' + ship.shipId} className="card col-md-4 col-sm-6 col-xs-12">
+      <div className="card col-md-4 col-sm-6 col-xs-12">
         <img src="https://thenewswheel.com/wp-content/uploads/2018/05/Millennium-Falcon-760x428.jpg"
           className="card-img-top"
           alt="..." />

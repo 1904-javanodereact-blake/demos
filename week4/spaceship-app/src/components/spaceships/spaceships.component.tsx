@@ -24,13 +24,12 @@ export class SpaceshipsComponent extends React.Component<any, IState> {
     })
   }
 
-
   render() {
     return (
       <div className="container">
         <div className="row">
           {this.state.ships.map(ship => (
-            <SpaceshipCardComponent ship={ship}/>
+            <SpaceshipCardComponent key={'ship-' +ship.shipId} ship={ship}/>
           ))}
         </div>
       </div>

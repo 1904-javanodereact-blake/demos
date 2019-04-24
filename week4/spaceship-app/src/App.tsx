@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { NavComponent } from './components/nav/nav.component';
 import './include/bootstrap';
@@ -20,17 +20,20 @@ const App: React.FC = () => {
     <BrowserRouter>
       <NavComponent />
       <div id="main-content-container">
-        <Route path="/chuck-norris" component={ChuckNorrisComponent} />
-        <Route path="/clicker" component={ClickerComponent} />
-        <Route path="/first" component={FirstComponent} />
-        <Route path="/home" component={HomeComponent} />
-        <Route path="/movies" component={MoviesComponent} />
-        <Route path="/nested" component={NestedComponent} />
-        <Route path="/pokemon" component={PokemonComponent} />
-        <Route path="/second" component={SecondComponent} />
-        <Route path="/sign-in" component={SignInComponent} />
-        <Route path="/spaceships" component={SpaceshipsComponent} />
-        <Route path="/tic-tac-toe" component={TicTacComponent} />
+        <Switch>
+          <Route path="/chuck-norris" component={ChuckNorrisComponent} />
+          <Route path="/clicker" component={ClickerComponent} />
+          <Route path="/first" component={FirstComponent} />
+          <Route path="/home" component={HomeComponent} />
+          <Route path="/movies" component={MoviesComponent} />
+          <Route path="/nested" component={NestedComponent} />
+          <Route path="/pokemon" component={PokemonComponent} />
+          <Route path="/second" component={SecondComponent} />
+          <Route path="/sign-in" component={SignInComponent} />
+          <Route path="/spaceships" component={SpaceshipsComponent} />
+          <Route path="/tic-tac-toe" component={TicTacComponent} />
+          <Route component={HomeComponent} />
+        </Switch>
       </div>
     </BrowserRouter>
   );
