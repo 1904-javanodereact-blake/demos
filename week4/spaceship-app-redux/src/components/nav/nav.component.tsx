@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import RevLogo from '../../assets/rev-logo.png';
+import { IClickerState, IState } from '../../reducers';
+import { connect } from 'react-redux';
 
-export class NavComponent extends React.Component {
+interface INaveProps {
+  clicker: IClickerState
+}
+
+export class NavComponent extends React.PureComponent<INaveProps> {
   render() {
     return (
       <nav className="navbar navbar-toggleable-md navbar-expand-lg navbar-light bg-light display-front nav-pad">
@@ -29,7 +35,7 @@ export class NavComponent extends React.Component {
               <Link to="/second" className="unset-anchor nav-link">Second</Link>
             </li>
             <li className="nav-item active">
-              <Link to="/clicker" className="unset-anchor nav-link">Clicker</Link>
+              <Link to="/clicker" className="unset-anchor nav-link">Clicker {this.props.clicker.clicks}</Link>
             </li>
             <li className="nav-item active">
               <Link to="/spaceships" className="unset-anchor nav-link">Spaceships</Link>
@@ -53,3 +59,11 @@ export class NavComponent extends React.Component {
     );
   }
 }
+
+const mapStateToProps = (state: IState) => {
+  return {
+    clicker: state.clicker
+  }
+}
+
+export default connect(mapStateToProps)(NavComponent);

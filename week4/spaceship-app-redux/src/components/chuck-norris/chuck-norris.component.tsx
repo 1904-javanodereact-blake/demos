@@ -1,32 +1,38 @@
 import React from 'react';
+import { IChuckNorrisState, IClickerState, IState } from '../../reducers';
+import { connect } from 'react-redux';
+import { buyJoke } from '../../actions/chuck-norris.actions';
 
-interface IChuckNorrisState {
-  joke: string
+interface IChuckNorrisProps {
+  norris: IChuckNorrisState,
+  clicker: IClickerState,
+  buyJoke: () => void
 }
 
-export class ChuckNorrisComponent extends React.Component<any, IChuckNorrisState> {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      joke: 'Chuck Norris Caught all 151 Pokemon with no Pokepalls'
-    }
-  }
-
-  newJoke = async () => {
-    const resp = await fetch('http://api.icndb.com/jokes/random?limitTo=[nerdy]');
-    const body = await resp.json();
-    this.setState({
-      joke: body.value.joke
-    })
-  }
+export class ChuckNorrisComponent extends React.Component<IChuckNorrisProps> {
 
   render() {
+    const {norris, clicker} = this.props;
     return (
       <div>
-        <h1> {this.state.joke} </h1>
-        <button onClick={this.newJoke} className="btn btn-success">New Joke</button>
+        <h1> {norris.joke} </h1>
+        <button onClick={this.props.buyJoke} 
+          className="btn btn-success"
+          disabled={norris.proccessingNewJoke || clicker.clicks < 10}>New Joke</button>
       </div>
     );
   }
 }
+
+const mapStateToProps = (state: IState) => {
+  return {
+    norris: state.chuckNorris,
+    clicker: state.clicker
+  }
+}
+
+const mapDispatchToProps = {
+  buyJoke: buyJoke
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ChuckNorrisComponent);
