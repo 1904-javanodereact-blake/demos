@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import RevLogo from '../../assets/rev-logo.png';
 import { IClickerState, IState } from '../../reducers';
 import { connect } from 'react-redux';
+import { User } from '../../model/user';
 
 interface INaveProps {
-  clicker: IClickerState
+  clicker: IClickerState,
+  currentUser?: User
 }
 
 export class NavComponent extends React.PureComponent<INaveProps> {
   render() {
+    const currentUser = this.props.currentUser;
     return (
       <nav className="navbar navbar-toggleable-md navbar-expand-lg navbar-light bg-light display-front nav-pad">
         <div className="navbar-header c-pointer shift-left">
@@ -17,6 +20,7 @@ export class NavComponent extends React.PureComponent<INaveProps> {
             <img className="img-adjust-position rev-logo" src={RevLogo} alt="revature" />
           </Link>
         </div>
+        <div>{currentUser && currentUser.name}</div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -25,9 +29,16 @@ export class NavComponent extends React.PureComponent<INaveProps> {
             <li className="nav-item active">
               <Link to="/home" className="unset-anchor nav-link">Home</Link>
             </li>
-            <li className="nav-item active">
-              <Link to="/sign-in" className="unset-anchor nav-link">Sign In</Link>
-            </li>
+            {
+              currentUser
+                ? <li className="nav-item active">
+                  <Link to="/sign-in" className="unset-anchor nav-link">Sign Out</Link>
+                </li>
+                : <li className="nav-item active">
+                  <Link to="/sign-in" className="unset-anchor nav-link">Sign In</Link>
+                </li>
+            }
+
             <li className="nav-item active">
               <Link to="/first" className="unset-anchor nav-link">First</Link>
             </li>
@@ -62,7 +73,8 @@ export class NavComponent extends React.PureComponent<INaveProps> {
 
 const mapStateToProps = (state: IState) => {
   return {
-    clicker: state.clicker
+    clicker: state.clicker,
+    currentUser: state.auth.currentUser
   }
 }
 

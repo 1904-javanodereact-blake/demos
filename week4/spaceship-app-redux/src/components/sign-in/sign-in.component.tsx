@@ -1,56 +1,32 @@
 import React from 'react';
+import { IAuthState, IState } from '../../reducers';
+import { connect } from 'react-redux';
+import { login } from '../../actions/auth.actions';
+import { RouteComponentProps } from 'react-router';
 
 interface ISignInState {
   username: string;
   password: string;
-  errorMessage: string;
 }
 
-export class SignInComponent extends React.Component<any, ISignInState> {
+interface ISignInProps extends RouteComponentProps<{}>{
+  auth: IAuthState
+  login: (username: string, password: string, history: any) => void
+}
+
+export class SignInComponent extends React.Component<ISignInProps, ISignInState> {
   constructor(props) {
     super(props);
     this.state = {
       username: '',
-      password: '',
-      errorMessage: ''
+      password: ''
     };
   }
 
   submit = async (event) => {
     event.preventDefault();
     console.log('attempting to login');
-    const credentials = {
-      username: this.state.username,
-      password: this.state.password
-    };
-
-    try {
-      const resp = await fetch('http://localhost:8080/users/login', {
-        method: 'POST',
-        credentials: 'include',
-        body: JSON.stringify(credentials),
-        headers: {
-          'content-type': 'application/json'
-        }
-      })
-      console.log(resp);
-
-      if (resp.status === 401) {
-        this.setState({
-          errorMessage: 'Invalid Credentials'
-        });
-      } else if (resp.status === 200) {
-        // redirect to spaceships page
-        // const user = await resp.json();
-        this.props.history.push('/spaceships');
-      } else {
-        this.setState({
-          errorMessage: 'Cannot Login At This Time'
-        });
-      }
-    } catch (err) {
-      console.log(err);
-    }
+    this.props.login(this.state.username, this.state.password, this.props.history);
   }
 
   updateUsername = (event) => {
@@ -66,7 +42,8 @@ export class SignInComponent extends React.Component<any, ISignInState> {
   }
 
   render() {
-    const { username, password, errorMessage } = this.state;
+    const { username, password } = this.state;
+    const errorMessage = this.props.auth.errorMessage;
     return (
       <form className="form-signin" onSubmit={this.submit}>
         <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
@@ -86,3 +63,15 @@ export class SignInComponent extends React.Component<any, ISignInState> {
     );
   }
 }
+
+const mapStateToProps = (state: IState) => {
+  return  {
+    auth: state.auth
+  }
+}
+
+const mapDispatchToProps = {
+  login: login
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignInComponent);
