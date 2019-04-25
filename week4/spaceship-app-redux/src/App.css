@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*****************************
+  NAV
+*****************************/
+.rev-logo {
+  width: auto;
+  height: 2em;
+  margin-right: 2em;
+}
+
+.margin-nav {
+  margin-right: 2em
+}
+
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0,0,0,.7);
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: .75rem !important;
+  padding-left: .75rem !important;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+nav {
+  border-bottom: 1px solid #ffffff !important;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px -12px 28px -1px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 1px -12px 28px -1px rgba(0, 0, 0, 0.87);
+  box-shadow: 1px -12px 28px -1px rgba(0, 0, 0, 0.87);
+}
+
+#examples-dropdown {
+  cursor: pointer;
+}
