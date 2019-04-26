@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IIncrementerProps {
+export interface IIncrementerProps {
   label: string;
   increment: () => void
 }

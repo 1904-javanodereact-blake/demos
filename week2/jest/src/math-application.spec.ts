@@ -3,6 +3,7 @@ const mockCalculator = {
   divide: jest.fn()
 }
 
+// mock the entire caluclator module
 jest.mock('./calculator', () => {
   return mockCalculator;
 })
