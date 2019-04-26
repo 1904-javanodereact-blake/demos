@@ -14,7 +14,7 @@ export class NavComponent extends React.PureComponent<INaveProps> {
   render() {
     const currentUser = this.props.currentUser;
     return (
-      <nav className="navbar navbar-toggleable-md navbar-expand-lg navbar-light bg-light display-front nav-pad">
+      <nav className="navbar navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark display-front nav-pad">
         <div className="navbar-header c-pointer shift-left">
           <Link to="/home" className="unset-anchor">
             <img className="img-adjust-position rev-logo" src={RevLogo} alt="revature" />

@@ -1,3 +1,4 @@
+import { environment } from "../environment";
 
 export const authTypes = {
   INVALID_CREDENTIALS: 'INVALID_CREDENTIALS',
@@ -7,7 +8,7 @@ export const authTypes = {
 
 export const login = (username: string, password: string, history: any) => async(dispatch) => {
   try {
-    const resp = await fetch('http://localhost:8080/users/login', {
+    const resp = await fetch(environment.context + '/users/login', {
       method: 'POST',
       credentials: 'include',
       body: JSON.stringify({username, password}),

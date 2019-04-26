@@ -1,3 +1,47 @@
+$primary-color: #023991;
+$primary-color-compliment: #02915a;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+
 .App {
   text-align: center;
 }
@@ -62,16 +106,25 @@
   padding-left: .75rem !important;
 }
 
-.bg-light {
-  background-color: #ffffff !important;
-}
-
 nav {
   border-bottom: 1px solid #ffffff !important;
   margin-bottom: 20px;
   -webkit-box-shadow: 1px -12px 28px -1px rgba(0, 0, 0, 0.87);
   -moz-box-shadow: 1px -12px 28px -1px rgba(0, 0, 0, 0.87);
   box-shadow: 1px -12px 28px -1px rgba(0, 0, 0, 0.87);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,57,145,0.7903536414565826) 44%,$primary-color 100%);
+
+  .dropdown-menu {
+    background-color: transparent;
+
+    @include lg {
+      background-color: $primary-color;
+    }
+
+    .dropdown-item:hover {
+      background-color: $primary-color-compliment;
+    }
+  }  
 }
 
 #examples-dropdown {
