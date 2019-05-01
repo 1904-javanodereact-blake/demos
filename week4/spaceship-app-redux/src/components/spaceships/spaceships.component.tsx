@@ -18,7 +18,9 @@ export class SpaceshipsComponent extends React.Component<any, IState> {
 
   // in here we should initialize http calls
   componentDidMount = async () => {
-    const resp = await fetch(environment.context + '/spaceships');
+    const resp = await fetch(environment.context + '/spaceships', {
+      credentials: 'include'
+    });
     const body = await resp.json();
     this.setState({
       ships: body
