@@ -1,6 +1,6 @@
 package com.revature.model;
 
-public class Spaceship {
+public class Spaceship implements Comparable<Spaceship> {
 	private int id;
 	private String name;
 	private String description;
@@ -9,7 +9,7 @@ public class Spaceship {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Spaceship(int id, String name, String description) {
 		super();
 		this.id = id;
@@ -78,6 +78,11 @@ public class Spaceship {
 	@Override
 	public String toString() {
 		return "Spaceship [id=" + id + ", name=" + name + ", description=" + description + "]";
+	}
+
+	@Override
+	public int compareTo(Spaceship o) {
+		return this.id - o.id;
 	}
 
 }
