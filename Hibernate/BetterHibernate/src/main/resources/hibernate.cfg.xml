@@ -1,0 +1,67 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!-- WHAT IS HIBERNATE? Hibernate is an ORM and persistence framework. What 
+	is an ORM? Object Relational Mapping. ORMs take objects in programming languages 
+	and translate them to tables in your database. What is persistence? Storing 
+	your information/data in a form that is durable. (In our db) What are some 
+	of the benefits of hibernate? -As developers, we no longer have to write 
+	complex sql queries. Hibernate will perform lots of the complexity for us. 
+	-Hibernate is object oriented. -Hibernate is fast for a variety of reasons. 
+	~It has caching ~It uses connection pools to minimize bottle necked speeds 
+	caused by forming db connections -Hibernate is modular. You're able to write 
+	code using hibernate and later switch sql languages by simply changing out 
+	which driver you're using, no need to alter your code. -->
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- JDBC STUFF -->
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">leland2012</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres
+			<!-- postgresdb.czxlfsyznyrj.us-east-2.rds.amazonaws.com --></property>
+		<property name="hibernate.connection.driver_class">
+			org.postgresql.Driver
+		</property>
+		<property name="hibernate.default_schema">public</property>
+
+		<!-- ADDITIONAL HIBERNATE OPTIONS -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.connection.show_sql">true</property>
+		<property name="hibernate.connection.format_sql">true</property>
+
+		<!-- Connection Pool. A method of speeding up database calls. Hibernate 
+			will create 10 connections to the database when it starts up and everytime 
+			you create a session, that session will "borrow" a connection from the connection 
+			pool. When you close a session the connection doesn't close, it is simply 
+			freed up for another session to use. This speeds up database interactions -->
+
+		<property name="hibernate.connection.pool_size">10</property>
+
+		<!-- CREATE drops all existing tables and then hibernate creates your schema 
+			VALIDATE hibernate checks to make sure the schema is as expected UPDATE hibernate 
+			will not delete anything, it'll only add to your schema NONE well....it means 
+			hibernate won't do anything to your schema automatically -->
+		<property name="hibernate.hbm2ddl.auto">create</property>
+
+		<!-- CREATE drops all existing tables and then hibernate creates your schema 
+			VALIDATE hibernate checked to make sure the schema is as expected UPDATE 
+			hibernate will not delete anything it will only add to your schema. NONE 
+			well....it means hibernate wont do anything to your schema automatically -->
+
+		<!-- This is how we wire an entity using annotations -->
+		<mapping class="com.revature.model.Rockstar"/>
+		<!-- This is how you wire an entity using a mapping file -->
+		<!-- <mapping resource="Rockstar.hbm.xml"></mapping> -->
+		
+		<mapping class="com.revature.model.Band"/>
+		<mapping class="com.revature.model.RecordCompany"/>
+
+	</session-factory>
+</hibernate-configuration>
+        
+
+        
+        
+      
