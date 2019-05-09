@@ -22,7 +22,7 @@ public class Movie {
 	private String name;
 	private String description;
 
-	@ManyToOne
+	@ManyToOne()
 	private Rating rating;
 
 	@ManyToMany

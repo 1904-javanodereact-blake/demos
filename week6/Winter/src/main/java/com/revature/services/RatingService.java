@@ -19,7 +19,7 @@ public class RatingService {
 	}
 
 	public Rating save(Rating r) {
-		return ratingRepo.save(r);
+		return ratingRepo.save(r); // save will save or update
 	}
 
 }
