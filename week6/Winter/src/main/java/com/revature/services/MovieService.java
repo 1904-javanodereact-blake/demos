@@ -23,7 +23,7 @@ public class MovieService {
 	}
 
 	public List<Movie> findByGenre(int genreId) {
-		return movieRepo.findByGenresId(genreId);
+		return movieRepo.findByGenre(genreId);
 	}
 
 	public Movie save(Movie m) {
