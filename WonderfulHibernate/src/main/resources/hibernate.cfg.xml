@@ -1,0 +1,40 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- JDBC -->
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">p4ssw0rd</property>
+		<property name="hibernate.connection.url">
+			jdbc:postgresql://localhost:5432/postgres
+		</property>
+		<property name="hibernate.connection.driver_class">
+			org.postgresql.Driver
+		</property>
+		<property name="hibernate.default.schema">public</property>
+		
+		<!-- ADDITIONAL HIBERNATE OPTIONS -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.connection.show_sql">true</property>
+		<property name="hibernate.connection.format_sql">true</property>
+		
+		<property name="hibernate.connection.pool_size">10</property>
+		
+		<!-- CREATE		drop all existing tables and then hibernate creates your schema
+			VALIDATE	hibernate checks to make sure the schema is as expected
+			UPDATE		hibernate will not delete anything it will only add to your schema
+			NONE		hibernate will not do anything to the schema automatically
+		 -->
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<mapping resource="Rockstar.hbm.xml"></mapping>
+	</session-factory>
+
+
+</hibernate-configuration>
+
+
+
+
+
