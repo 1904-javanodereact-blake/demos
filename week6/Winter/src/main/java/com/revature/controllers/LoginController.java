@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.dto.CredentialDto;
 import com.revature.model.AppUser;
 import com.revature.services.UserService;
 
@@ -19,7 +20,7 @@ public class LoginController {
 	private UserService userService;
 
 	@PostMapping("/login")
-	public ResponseEntity<AppUser> login(@RequestBody AppUser credentials, HttpServletRequest req) {
+	public ResponseEntity<AppUser> login(@RequestBody CredentialDto credentials, HttpServletRequest req) {
 		AppUser user = userService.login(credentials);
 		if (user != null) {
 			req.getSession().setAttribute("user", user);
