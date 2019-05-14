@@ -8,7 +8,7 @@ export const authTypes = {
 
 export const login = (username: string, password: string, history: any) => async(dispatch) => {
   try {
-    const resp = await fetch(environment.context + '/users/login', {
+    const resp = await fetch(environment.context + '/login', {
       method: 'POST',
       credentials: 'include',
       body: JSON.stringify({username, password}),
@@ -18,11 +18,11 @@ export const login = (username: string, password: string, history: any) => async
     })
     console.log(resp);
 
-    if (resp.status === 401) {
+    if (resp.status === 400 || resp.status === 401) {
       dispatch({
         type: authTypes.INVALID_CREDENTIALS
       })
-    } else if (resp.status === 200) {
+    } else if (resp.status === 201 || resp.status === 200) {
       // redirect to spaceships page
       const user = await resp.json();
       dispatch({
@@ -31,7 +31,7 @@ export const login = (username: string, password: string, history: any) => async
         },
         type: authTypes.LOGGED_IN
       })
-      history.push('/spaceships');
+      history.push('/home');
     } else {
       dispatch({
         type: authTypes.FAILED_TO_LOGIN

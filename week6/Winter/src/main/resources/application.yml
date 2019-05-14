@@ -22,3 +22,6 @@ spring:
         default_schema: ${DB_SCHEMA}
     show-sql: false
     
+logging:
+  level:  
+    com.revature: TRACE

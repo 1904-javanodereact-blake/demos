@@ -15,6 +15,7 @@ public class AppUser {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String username;
+	
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private String password;
 
@@ -90,7 +91,7 @@ public class AppUser {
 
 	@Override
 	public String toString() {
-		return "AppUser [id=" + id + ", username=" + username + ", password=" + password + "]";
+		return "AppUser [id=" + id + ", username=" + username + "]";
 	}
 
 }

@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.aop.Secured;
 import com.revature.model.AppUser;
+import com.revature.model.Genre;
 import com.revature.model.Movie;
 import com.revature.services.MovieService;
 import com.revature.util.AuthUtil;
@@ -62,12 +65,13 @@ public class MovieController {
 //		movies.add(new Movie(3, "Endgame", "People fight", ratings.get(0), tempGenres));
 //	}
 
+	@Secured
 	@GetMapping()
 	public ResponseEntity<List<Movie>> findAll() {
-		AppUser currentUser = authUtil.getCurrentUser();
-		if (currentUser == null) {
-			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
-		}
+//		AppUser currentUser = authUtil.getCurrentUser();
+//		if (currentUser == null) {
+//			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+//		}
 		return new ResponseEntity<List<Movie>>(movieService.findAll(), HttpStatus.OK);
 	}
 
@@ -96,6 +100,12 @@ public class MovieController {
 		movieService.save(m);
 		ResponseEntity<Movie> resp = new ResponseEntity<Movie>(m, HttpStatus.CREATED);
 		return resp;
+	}
+
+	@Secured
+	@PutMapping("{id}/genres")
+	public void addGenreToMovie(@PathVariable int id, @RequestBody Genre genre) {
+		movieService.addGenreToMovie(id, genre);
 	}
 
 	@ExceptionHandler(RuntimeException.class)
