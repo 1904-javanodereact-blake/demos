@@ -11,7 +11,7 @@
 	<groupId>com.revature</groupId>
 	<artifactId>UserService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>UserService</name>
+	<name>AccountService</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
