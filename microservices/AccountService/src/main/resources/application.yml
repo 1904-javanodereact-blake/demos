@@ -1,0 +1,8 @@
+server:
+  port: 8081
+  
+spring:  application:    name: account-service
+
+ 
+eureka:  client:    service-url:      defaultZone: http://10.226.81.247:8082/eureka
+  instance:    lease-expiration-duration-in-seconds: 2    lease-renewal-interval-in-seconds: 1
