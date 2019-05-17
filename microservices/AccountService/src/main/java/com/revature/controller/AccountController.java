@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,12 +36,19 @@ public class AccountController {
 	}
 
 	@GetMapping("owner/{id}")
-	public Account findById(@PathVariable int id) {
+	public ResponseEntity<Account> findById(@PathVariable int id) {
 		for (Account acc : accounts) {
 			if (acc.getOwnerId() == id) {
 				AppUser owner = userClient.findById(id); // retreive owner from the other service
 				acc.setOwner(owner);
-				return acc;
+				HttpStatus respStatus = HttpStatus.OK;
+				if(owner.getId() == -1) {
+					respStatus = HttpStatus.PARTIAL_CONTENT;
+					acc.setOwner(null);
+				}
+				ResponseEntity<Account> resp = new ResponseEntity<Account>(acc, respStatus);
+				return resp;
+
 			}
 		}
 		return null;
