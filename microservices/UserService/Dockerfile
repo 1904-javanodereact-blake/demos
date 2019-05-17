@@ -5,4 +5,4 @@ EXPOSE 8080
 
 COPY target/UserService.jar UserService.jar
 
-CMD "java -jar UserService.jar"
+CMD ["java", "-jar", "UserService.jar"]
